@@ -7,7 +7,13 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  modules: ["@nuxt/eslint", "@nuxtjs/tailwindcss", "@vee-validate/nuxt"],
+  modules: [
+    "@nuxt/eslint",
+    "@nuxtjs/tailwindcss",
+    "@vee-validate/nuxt",
+    "@nuxtjs/color-mode",
+    "shadcn-nuxt",
+  ],
 
   veeValidate: {
     autoImports: true,
@@ -18,5 +24,11 @@ export default defineNuxtConfig({
       FieldArray: "VeeFieldArray",
     },
   },
+
+  shadcn: {
+    prefix: "Ui",
+    componentDir: "./app/components/ui",
+  },
+
   ssr: false,
 })

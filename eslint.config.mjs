@@ -9,6 +9,7 @@ export default withNuxt(
   {
     rules: {
       "tailwindcss/no-custom-classname": "off",
+      "@typescript-eslint/no-explicit-any": "off",
     },
   },
 )
