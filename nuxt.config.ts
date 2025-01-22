@@ -13,6 +13,8 @@ export default defineNuxtConfig({
     "@vee-validate/nuxt",
     "@nuxtjs/color-mode",
     "shadcn-nuxt",
+    "@pinia/nuxt",
+    "@vueuse/nuxt",
   ],
 
   veeValidate: {
@@ -23,6 +25,15 @@ export default defineNuxtConfig({
       ErrorMessage: "VeeErrorMessage",
       FieldArray: "VeeFieldArray",
     },
+  },
+
+  app: {
+    pageTransition: {
+      name: "page",
+      mode: "out-in",
+      appear: true,
+    },
+    layoutTransition: false,
   },
 
   shadcn: {
