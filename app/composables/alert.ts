@@ -7,15 +7,6 @@ export type AlertDialogProps = {
   }
   resolve: (result: boolean) => void
 }
-export type AlertClientDialogProps = {
-  data: {
-    title?: string
-    message: string
-    confirmText?: string
-    cancelText?: string
-  }
-  resolve: (result: boolean) => void
-}
 
 const current = ref<AlertDialogProps>()
 
