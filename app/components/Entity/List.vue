@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import type { Entity } from "~~/types/entity"
-import { vInfiniteScroll } from "@vueuse/components"
 
-const props = defineProps<{
+defineProps<{
   data: Entity[]
 }>()
 
